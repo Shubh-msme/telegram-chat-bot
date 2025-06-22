@@ -5,8 +5,8 @@ const bodyParser = require('body-parser');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-const TELEGRAM_TOKEN = 'YOUR_TELEGRAM_BOT_TOKEN';  // Replace with your bot token
-const OPENAI_KEY = 'YOUR_OPENAI_API_KEY';          // Replace with your OpenAI key
+const TELEGRAM_TOKEN = '7286404366:AAEiWQEoWGahbNqEfW0ov4xMU7Lr7I06viU';  // Replace with your bot token
+const OPENAI_KEY = 'Wwbxfy9KZ0oxGRdIl7wEHMXoy7lcJZN4MwUezhxc';          // Replace with your OpenAI key
 const TELEGRAM_API = `https://api.telegram.org/bot${TELEGRAM_TOKEN}`;
 
 app.use(bodyParser.json());
@@ -44,3 +44,9 @@ app.post(`/webhook/${TELEGRAM_TOKEN}`, async (req, res) => {
 });
 
 app.listen(PORT, () => console.log(`Server running at http://localhost:${PORT}`));
+const PORT = process.env.PORT || 3000;
+
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
+});
+s
