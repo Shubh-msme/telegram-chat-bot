@@ -4,7 +4,7 @@
   "description": "A Telegram chatbot powered by ChatGPT",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index_cohere.js"
   },
   "dependencies": {
     "axios": "^1.6.0",
